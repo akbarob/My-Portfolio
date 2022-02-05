@@ -21,17 +21,13 @@ header{
 }
 .topnav{
   overflow: hidden;
-  background-color: rgb(0, 0, 0);
   width: 60%;
+  background-color: rgb(0, 0, 0);
   float: right;
 }
 .topnav a{
-  display: block;
-  text-align: right;
-  float: left;
   padding-top: 20px;
   margin-left: 3%;
-  text-align: center;
   text-decoration: none;
   font-variant: small-caps;
   color: #ffffff;
@@ -49,7 +45,6 @@ nav a:hover{
 .divbg{
   background-image: url("https://miro.medium.com/max/1050/0*uVqCI6aVs5SxXoj7");
   background-size: contain;
-  background-color: ;
   height: 300px;
   margin: auto auto 3% auto;
   padding-top: 1%;
@@ -129,16 +124,19 @@ input:hover, textarea:hover{
   }
   .topnav.responsive {
     position: absolute;
-    left: 50;
-    top: 5;
+    right: 0;
+    top: 0;
     width: 50%;
+    transition: 0.5s;
+    z-index: 1;
   }
     .topnav.responsive .icon {
       position: absolute;
       z-index: 100%;
-      margin-top: 0%;
+      margin-top: 2%;
       right: 0;
       top: 0;
+      
     }
     .topnav.responsive a {
       margin-top: 10%;
@@ -164,9 +162,7 @@ input:hover, textarea:hover{
   #left{
     margin-left: 2%;
   }
-  #center{
 
-  }
   #right{
     float: right;
     margin-right: 2%;
