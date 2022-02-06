@@ -102,7 +102,7 @@ color: #000000;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow:5px 5px 20px #000000, -5px -5px 20px rgba(0, 0, 0, 0.521);
+  box-shadow:5px 5px 10px #000000;
 
 }.one:hover{
   background-color: rgba(174, 174, 216, 0.308);
