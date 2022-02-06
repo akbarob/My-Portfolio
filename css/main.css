@@ -22,11 +22,12 @@ header{
 .topnav{
   overflow: hidden;
   width: 60%;
+  padding-top: 20px;
   background-color: rgb(0, 0, 0);
   float: right;
 }
 .topnav a{
-  padding-top: 20px;
+  
   margin-left: 3%;
   text-decoration: none;
   font-variant: small-caps;
@@ -44,8 +45,10 @@ nav a:hover{
 }
 .divbg{
   background-image: url("https://miro.medium.com/max/1050/0*uVqCI6aVs5SxXoj7");
-  background-size: contain;
-  height: 300px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
   margin: auto auto 3% auto;
   padding-top: 1%;
   width: 100%;
@@ -59,6 +62,7 @@ nav a:hover{
   font-variant: small-caps;
 }
 .sen{
+  color: #ffffff;
   padding-left: 15%;
   padding-right: 15%;
   font-family: 'Courier New', Courier, monospace;
@@ -66,17 +70,31 @@ nav a:hover{
 
 #left{
 float: left;
+background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/57c437135974333.61f14741747b6.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 }
 #center{
+  color: #ffffff;
+  background-image: url("");
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
   margin: auto;
   margin-bottom: 5%;
 }
 #right{
+  color: bisque;
   float: left;
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/51f1da125366769.6117a44f35b29.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
 }
 .one{
-color: #ffffff;
+color: #000000;
   width: 300px;
   height: 300px;
   margin-bottom: 5%;
@@ -84,6 +102,7 @@ color: #ffffff;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  box-shadow:5px 5px 20px #000000, -5px -5px 20px rgba(0, 0, 0, 0.521);
 
 }.one:hover{
   background-color: rgba(174, 174, 216, 0.308);
@@ -112,10 +131,28 @@ input:hover, textarea:hover{
   color: #ffffff;
   transition-duration: 0.9s;
 }
+details{
+  font-variant: small-caps;
+  margin-bottom: 2%;
+}
+.psummary{
+  font-style: oblique;
+}
+footer{
+  height: 54px;
+  width: 100%;
+  padding-left: 3%;
+  background-color: #000000;
+  color: #ffffff;
+  margin-top: 1px;
+  display: inline-flex;
+  align-items: center;
+}
 
 
 /*contact me page Ends*/
 @media screen and (max-width:938px) {
+ 
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
@@ -125,17 +162,19 @@ input:hover, textarea:hover{
   .topnav.responsive {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 1%;
     width: 50%;
-    transition: 0.5s;
+    height: 100vh;
+    margin-right: 1%;
+    margin-top: 1%;
     z-index: 1;
   }
     .topnav.responsive .icon {
       position: absolute;
-      z-index: 100%;
-      margin-top: 2%;
+      z-index: 1;
       right: 0;
       top: 0;
+      margin:3% 6% 0% 0%;
       
     }
     .topnav.responsive a {
@@ -157,6 +196,29 @@ input:hover, textarea:hover{
     background-color: black;
     }
 }
+.buttomdiv{
+  clear: both;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(25, 0, 255);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
 @media screen and (min-width:701px){
   
   #left{
