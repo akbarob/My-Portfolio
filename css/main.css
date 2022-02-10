@@ -1,11 +1,15 @@
 body{
+  margin: auto;
   width: auto;
   text-align: center;
 }
 header{
+  position:sticky;
+  margin-top: 0%;
+  width: 100%;
   height: 54px;
   background-color: #000000;
-  margin-bottom: 1px;
+  margin-bottom: 10px;
   
 }
 #myBtn {
@@ -17,36 +21,38 @@ header{
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: rgb(25, 0, 255);
+  background-color: rgb(65, 65, 65);
   color: white;
   cursor: pointer;
   padding: 15px;
   border-radius: 40px;
+  opacity: 0.5;
 }
 
 #myBtn:hover {
-  background-color: #555;
+  opacity: 0.9;
+  background-color: rgb(0, 0, 0);
 }
 #brandname{
   text-decoration: none;
   font-family: Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 24px;
   float: left;
   width: 27%;
-  padding-top: 20px;
+  padding-top: 10px;
   margin-left: 2%;
   color: #ffffff;
   font-variant: small-caps;
 }
 .topnav{
+  
   overflow: hidden;
   width: 60%;
-  padding-top: 20px;
   background-color: rgb(0, 0, 0);
   float: right;
+  padding-top: 20px;
 }
 .topnav a{
-  
   margin-left: 3%;
   text-decoration: none;
   font-variant: small-caps;
@@ -62,21 +68,21 @@ nav a:hover{
 .topnav .icon {
   display: none;
 }
+
 .divbg{
   background-image: url("https://miro.medium.com/max/1050/0*uVqCI6aVs5SxXoj7");
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 400px;
-  margin: auto auto 3% auto;
-  padding-top: 1%;
+  margin:auto auto 3% auto;
+  padding-top: 10%;
   width: 100%;
   text-align: center;
   color: #ffffff;
 }
 
 .title{
-  padding-top: 5%;
   text-shadow: 0px 5px #ffffff15;
   font-variant: small-caps;
 }
@@ -133,6 +139,25 @@ color: #0400ff;
   text-align: center;
   
 }
+
+#myCarousel{
+  float: left;
+  width: 500px;
+  height: 400px;
+  margin-left: 5%;
+
+}
+.video{
+  float: right;
+  margin-right: 5%;
+  width: 500px;
+    height: 400px;
+}
+.carousel-inner>.item>img{
+  width: 500px;
+  height: 400px;
+  border: 5px black solid;
+}
 /*contact me page*/
 h1{
   text-align: center;
@@ -160,6 +185,7 @@ details{
 .psummary{
   font-style: oblique;
 }
+
 footer{
   height: 54px;
   width: 100%;
@@ -170,7 +196,38 @@ footer{
   display: inline-flex;
   align-items: center;
 }
+/*About me Page*/
+.aboutme{
+  font-variant: small-caps;
+}
+.abouta{
+  margin:5% 5% 5% 5%;
+  float: left;
+  height: 400px;
+  width: 48%;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.akbarp{
+  margin:5% 0% 5% 5%;
+  float: left;
+  background-image: url("/img/IMG_0530.JPG");
+  background-size: cover;
+  background-position-y: -80px;
+  height: 400px;
+  width: 30%;
+  border: 5px solid black;
+  border-radius: 50px;
+  
+  }
+
 /*Resume Page*/
+
 .boddy{
   font-family:Arial, Helvetica, sans-serif ;
   margin: 1% 10% 0% 10%;
@@ -244,7 +301,6 @@ footer{
 .rsocials span a:hover{
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  margin-right: 10%;
   text-decoration: none;
   font-variant: small-caps;
   color: blue;
@@ -252,6 +308,11 @@ footer{
 
 /*contact me page Ends*/
 @media screen and (max-width:938px) {
+
+  #brandname{
+    width: 33%;
+    font-size: 18px;
+  }
  
   .topnav a {display: none;}
   .topnav a.icon {
@@ -303,11 +364,67 @@ footer{
       border-style: solid;
       border-width: 1px;
     }
+
+    /*About me Page*/
+  .abouta{
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 0%;
+  line-height: 40px;
+  }
+
+  .akbarp{
+  margin: auto;
+  text-align: center;
+  background-image: url("/img/IMG_0530.JPG");
+  background-position: top;
+  background-size: cover;
+  height: 400px;
+  width: 300px;
+  border: 5px solid black;
+  border-radius: 50px;
+  float: none;
+  }
+  #myCarousel{
+    float: none;
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+  
+  }
+  .carousel-inner>.item>img{
+    width: 300px;
+    height: 300px;
+    border: 5px black solid;
+  }
+
+  .video{
+    float: none;
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    height: 200px;
+  }
+  .calender{
+    width: 50%;
+  }
 }
 .buttomdiv{
-  clear: both;
-}
+  clear: both;}
 /*Resume Page*/
+.rsocials span a{
+  margin-right: 1%;
+  text-decoration: none;
+  font-variant: small-caps;
+  color: black;
+}
+
+
+
 
 
 @media screen and (min-width:701px){
